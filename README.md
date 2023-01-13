@@ -37,7 +37,8 @@
 
     ## 모델 구조, ERD 작성
     ![키보드워리어 최종 ERD](https://user-images.githubusercontent.com/97111793/203498672-67c14351-a903-4e81-95e2-619f43b4203d.png)
-
+    
+    
     **App별 Model**
     <details>
     <summary>accounts app</summary>
@@ -141,7 +142,134 @@
      - create_at = models.DateTimeField(auto_now_add=True)
 
     </details>
+    
+# 칸반보드
 
+## 11월8일
+
+- 기획안 작성
+- 모델 생성
+- 피그마 작성
+
+ 
+
+## 11월9일
+
+- Django 기본 세팅
+- ERD 작성
+- 피그마 작성
+
+ 
+
+## 11월10일
+
+- 피그마 완성
+- 다나와 사이트 데이터 크롤링
+- 크롤링 데이터 정제 작업
+- `accounts` 회원가입 기능 완성
+- `accounts` 로그인 기능 완성
+- `base.html` nav바 완성
+- `articles/main.html` 구조 완성
+- `reviews/detail.html` 비동기 댓글 생성
+- `trade/detail.html` 비동기 댓글생성
+- `reviews/detail.html` 즐겨찾기
+- 회원가입,로그인,회원정보수정 폼
+- `articles/all` 무한 스크롤
+- `trade`앱 CRUD
+
+ 
+
+## 11월11일
+
+- `accounts/deatail.html`
+- `reviews/create.html`
+- `articles/all.html` 구조 및 애니메이션 넣기
+- `trade/keyboard_search` 키보드 비동기 검색
+- `trade/detail` 비동기 댓글 생성 및 삭제
+- `trade/detail` 찜하기
+- 데이터 json파일 DB저장 (python manage.py loaddata)
+
+ 
+
+## 11월12일
+
+- `reviews`, `trade` 댓글 욕설, 비속어 필터링
+- `reviews/create`,`trade/create` 다중 이미지
+- `main`페이지 오늘 방문자 수 및 누적 방문자수 완료
+- `reviews/detail` 조회수
+
+ 
+
+## 11월13일
+
+- `accounts/login` 소셜로그인 구현
+- 전체 방문자 수, 오늘 방문자 수 구현
+- `accounts/detail` 페이지
+- `articles/index` 반응형
+- `trade/detail` search 기능
+- `review/detail` 조회수, 좋아요
+
+ 
+
+ 
+
+## 11월14일
+
+- `trade/create` 폼 작성
+- `keyboard_search_fix`
+- `trade/index` 페이지 완성
+- `accounts/detail` 라디오 버튼 구현
+
+ 
+
+## 11월15일
+
+- `trade/index` 라디오 동작시키기
+- `reviews/index` 페이지
+- `articles/all` 애니메이션 수정하기
+- `articles/main` 유저 선호도 기반 키보드 추천
+- `review/detail` 댓글 좋아요 비동기
+- `articles/detail`키보드 평점
+- `trade/detail` 댓글, 댓글창
+- `trade/index` 라디오 동작 시키기
+- `trade/detail` 다중 이미지
+- `reviews/index.html` 구조
+
+ 
+
+## 11월16일
+
+- `articles/all` 검색 기능
+- `articles/all` 광고 비동기 (리스트에 여러 개 넣어서 랜덤으로 광고 나오게)
+- `trade`, `reviews` 검색 기능 구현
+- `articles/detail`과 중고 거래 게시판 연결
+- `articles/all` 비동기 무한 스크롤
+- 소셜로그인 시 추가정보 기입
+- `reviews/detail.html` 구조
+
+ 
+
+## 11월17일
+
+- `accounts` 메세지함
+- `reviews/detail` 거래 게시글 수정
+- `accounts/login` 로그인 폼 변경
+- `trade/detail`, `reviews/detail` 검색창 디자인 변경
+- `trade/detail` 거래 상태 변경 필드 추가 및 request.user == trade.user 이면 상태 변경창 띄워주기
+- `accounts/detail` 모달로 수정폼 추가하기,
+
+ 
+
+## 11월18일
+
+- 팔로우 기능 모달창에도 비동기 처리
+- `trade/detail` 거래완료 처리되면 찜하기, 쪽지 보내기 버튼 없애기
+- `trade/index` 거래완료 처리된 이미지 표시하고 리스트의 마지막에 쌓이도록 바꾸기
+- `base` 알림창 추가
+
+## 11월 19일
+
+- `AWS` 배포 (RDS, Beanstalk)
 
     ## 🧾기능 소개
 
